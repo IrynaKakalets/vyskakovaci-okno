@@ -1,65 +1,75 @@
+* { 
+  box-sizing: border-box;
+  }    
+
 body {
   font: 16px/1.5 sans-serif;
-  position: relative;
+  text-align: center;
 }
 
-.modal {
-  width: 50vw;
-  height: 40vh;
-  border: 15px solid #5bcef3;
-  background-color: #b4eafb;
-  border-radius: 10px;
-  font-size: 30px;
-
-  position: absolute;
-  /* relative? */
-  left: 200px;
-
+h1 {
+  color: #5f3165;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 button {
   width: 80px;
   height: 25px;
-
-  position: absolute;
 }
 
 .exit {
   color: black;
   width: 30px;
   border-radius: 3px;
-
-  right: 0;
-  margin: 5px;
-}
-
-.pomoc {
-  width: 40vw;
-  height: 10vh;
-  border: 5px solid #aa80a5;
-  background-color: #a5eecd;
-  border-radius: 5px;
-  font-size: 15px;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.pomoc p {
-  margin-top: 30px;
-  text-align: center;
+  /*muj styl*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .ok {
   background-color: #28a745;
   color: white;
-
+  /*moj styl*/
   position: absolute;
-  bottom: 0px;
-  left: calc(50% - 73px / 2);
-
-  /* nebo 50% - 30px - по центру кнопка ок*/
-
+  bottom: 30px;
+  left: 50%
 }
 
 /* sem přijdou tvoje styly */
+.sticky {
+  width: 50vw;
+  height: 40vh;
+  border: 15px solid #5f3165;
+  background-color: #f5dcf3;
+  border-radius: 10px;
+  font-size: 30px;
+  position: sticky;
+  z-index: 1;
+  left: 20%;
+  top: 30px;
+}
+
+.fixed {
+  width: 50vw;
+  height: 40vh;
+  border: 15px solid #736879;
+  background-color: #cedbdf;
+  border-radius: 5px;
+  font-size: 30px;
+  position: fixed;
+  z-index: 1;
+  left: 5vw;
+  top: 50vh;
+}
+
+.pomoc {
+  width: 400px;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(160, 238, 177);
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
